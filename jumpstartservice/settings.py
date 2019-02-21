@@ -22,7 +22,7 @@ STATIC_DIR = os.path.join(BASE_DIR, 'jumpstart/static')
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'd!b9(6tv2$tr(7x00)&2vh)=lz(&gu=9*&%eqh3*gw@6yv+x1@'
+SECRET_KEY = os.environ['MY_KEY_JUMP']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
