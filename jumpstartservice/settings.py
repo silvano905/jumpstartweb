@@ -27,7 +27,7 @@ SECRET_KEY = os.environ['MY_KEY_JUMP']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['silvanojumpstart.pythonanywhere.com', 'www.jumpstartcarservice.com', '127.0.0.1']
 
 
 # Application definition
