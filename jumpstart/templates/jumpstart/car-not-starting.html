@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+{% load bootstrap4 %}
+<head>
+    <title>Car not stating?</title>
+        <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport" >
+    <meta name="description" content="Learn why your car is not starting and request a jump start">
+
+    <meta name="keywords" content="car not starting, jump start service, car has no power, car won't start">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/my_style.css' %}"/>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+
+    <a class="small_font navbar-brand" href="{% url 'jumpstart:home'%}">jumpstartcarservice
+    </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbarXs">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="collapsingNavbarXs">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Info
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{% url 'jumpstart:dead-car-battery'%}">dead car battery?</a>
+
+                    </div>
+                </li>
+
+
+
+            </ul>
+        </div>
+
+
+
+</nav>
+
+
+<div align="center"><h1>Jump start only $39</h1></div>
+    <div class="bottom_margin container" align="center">
+                            <div style="position: relative; text-align: center; color: white">
+                            <div style="margin-top: 5px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                                                    <a href="www.chicagocarhelp.com">
+
+                                <h4 style="background-color: black">Click to get a jump start now</h4>
+                                <h4 style="background-color: black">Free Estimate</h4>
+                                                                    </a>
+
+                            </div>
+                                    <a href="www.chicagocarhelp.com">
+
+                            <img style="width: 100%"
+                             src="http://drive.google.com/uc?export=view&id=1tjeNkV-Fyy5Zm0-lbdIitDTiLB3muG4c"
+                             alt="car jump start service and roadside assistance" title="car jump start service">
+                                                </a>
+
+                        </div>
+
+    </div>
+
+<div class="container" align="center">
+    <h4>Why a car won't start</h4>
+    <h5>Dead battery</h5>
+    <p>A dead battery is the most common reason why your car won’t start. The battery is what the car uses to provide electrical power to the entire car and electrical components (e.g. lights, radio, etc.). While the vehicle is running, the alternator charges the battery. If the battery is not charged sufficiently, you will not be able to start the car or use any electrical components.</p>
+    <ul>
+    <li>Your headlights or dome light was left on overnight or for too long</li>
+    <li>You have a loose wire</li>
+    <li>The water inside the component evaporated, leading to poor conductivity</li>
+    <li>The battery's lifespan has expired</li>
+    </ul>
+
+    <h5>Bad Ignition Switch</h5>
+    <p>If you know your battery is working properly, but your car doesn’t turn over on the first few tries, you might have a problem with the ignition switch. You can try to narrow down the cause of your issue by turning on your headlights. Because the battery controls your headlights and dashboard, if they turn on, but your engine won’t start, a bad ignition switch is the likely culprit.</p>
+
+    <h5>Broken starter</h5>
+    <p>Similar to a bad ignition switch, a broken starter is another common reason your car won’t start. As the name implies, the starter provides the turning force necessary to get everything moving to start the engine. If you hear a clicking noise when you try to start your vehicle, a broken or weakened starter could be to blame.</p>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+
+</body>
+</html>

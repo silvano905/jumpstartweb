@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+{% load bootstrap4 %}
+<head>
+    <title>Dead car battery?</title>
+        <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport" >
+    <meta name="description" content="Learn why your car has a dead battery and get a jump start">
+
+    <meta name="keywords" content="car not starting, jump start service, car has no power, car won't start">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/my_style.css' %}"/>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+
+    <a class="small_font navbar-brand" href="{% url 'jumpstart:home'%}">jumpstartcarservice
+    </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbarXs">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="collapsingNavbarXs">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Info
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{% url 'jumpstart:car-not-starting'%}">car not starting?</a>
+
+                    </div>
+                </li>
+
+
+
+            </ul>
+        </div>
+
+
+
+</nav>
+
+
+<div align="center"><h1>Jump start only $39</h1></div>
+    <div class="bottom_margin container" align="center">
+                            <div style="position: relative; text-align: center; color: white">
+                            <div style="margin-top: 5px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                                                    <a href="www.chicagocarhelp.com">
+
+                                <h4 style="background-color: black">Click to get a jump start now</h4>
+                                <h4 style="background-color: black">Free Estimate</h4>
+                                                                    </a>
+
+                            </div>
+                                    <a href="www.chicagocarhelp.com">
+
+                            <img style="width: 100%"
+                             src="http://drive.google.com/uc?export=view&id=1tjeNkV-Fyy5Zm0-lbdIitDTiLB3muG4c"
+                             alt="car jump start service and roadside assistance" title="car jump start service">
+                                                </a>
+
+                        </div>
+    </div>
+
+<div class="container" align="center">
+    <h4>Reasons a battery might not work</h4>
+    <h5>Human error</h5>
+    <p>You’ve probably done this at least once in your life – you come home from work, tired and not really thinking, and left the headlights on, didn't completely close the trunk, or even forgot about some internal lights. Overnight the battery drains, and in the morning your car won’t start. Many new cars alert you if you’ve left your lights on, but may not have alerts for other components.</p>
+
+    <h5>Faulty Charging</h5>
+    <p>If your charging system isn’t working properly, your car battery can drain even while you’re driving. Many cars power their lights, radio, and other systems from the alternator, which can make the battery drain worse if there's a charging problem. The alternator may have loose belts or worn-out tensioners that keep it from working properly.</p>
+
+<h5>Defective Alternator</h5>
+    <p>A car alternator recharges the battery and powers certain electrical systems like lights, radio, air-conditioning, and automatic windows. If your alternator has a bad diode, your battery can drain. The bad alternator diode can cause the circuit to charge even when the engine is shut off, and you end up in the morning with a car that won’t start.</p>
+
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+
+</body>
+</html>
