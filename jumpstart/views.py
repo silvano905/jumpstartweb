@@ -11,3 +11,7 @@ def dead_battery(request):
 
 def car_not_starting(request):
     return render(request, 'jumpstart/car-not-starting.html')
+
+
+def site_map(request):
+    return render(request, 'jumpstart/sitemap.xml', content_type='text/xml')
