@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+
+class Profile(models.Model):
+    profile_pic = models.ImageField(upload_to='media', blank=True)
+
+    def __str__(self):
+        return self.profile_pic.path

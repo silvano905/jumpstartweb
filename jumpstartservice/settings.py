@@ -16,6 +16,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'jumpstart/static')
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
 
 # Quick-start development settings - unsuitable for production
@@ -25,7 +26,7 @@ STATIC_DIR = os.path.join(BASE_DIR, 'jumpstart/static')
 SECRET_KEY = os.environ['MY_KEY_JUMP']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['silvanojumpstart.pythonanywhere.com', 'www.jumpstartcarservice.com', '127.0.0.1']
 
@@ -128,3 +129,6 @@ STATICFILES_DIR = [STATIC_DIR]
 STATIC_ROOT = 'jumpstart/static'
 
 LOGIN_REDIRECT_URL = '/'
+
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
