@@ -67,25 +67,26 @@
 <div align="center"><h1>Jump start only $39</h1></div>
     <div class="bottom_margin container" align="center">
                             <div style="position: relative; text-align: center; color: white">
-                            <div style="margin-top: 5px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
 
-                                <h4 style="background-color: black">Car Jump Start Service</h4>
-                                <h4 style="background-color: black">Free Estimate</h4>
-
-                            </div>
 
                             <img style="width: 100%"
                              src="/media/media/jumpstart_cables.jpg"
                              alt="car jump start service and roadside assistance" title="car jump start service">
                              <a href="https://www.chicagocarhelp.com/">
-                                <button type="button" class="btn btn-primary btn-lg" style="margin: 5px">Click Here To Get Jump Start</button></a>
                         </div>
 
 
+        <div class="card text-white bg-dark mb-3 purple_shadow">
+
+                <div style="color: white; background-color: black; border-radius: 4px; margin: 0 1px 4px 1px">
+            <p>Only pay if the service was completed</p>
+            <p style="color: lime">Enter your phone for free estimate</p>
+        </div>
 
         <form action="{% url 'jumpstart:thankyou'%}" method="post">
                 {% csrf_token %}
-                <input type="hidden" name="manual_address" value="" id="add_manual_address">
+                <input type="text" name="manual_address" value="" id="add_manual_address"
+                       placeholder="Enter your phone location" style="padding: 3px; border: 1px solid #571746; border-radius: 5px; margin-bottom: 3px">
                 <input type='hidden' name="long" value="fuel" id="lat">
                 <p class="small" id="phone_output"></p>
                 <label for="phone">
@@ -97,7 +98,7 @@
 
 
             </form>
-
+        </div>
 
 
 
