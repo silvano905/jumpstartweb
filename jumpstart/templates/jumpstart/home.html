@@ -83,6 +83,24 @@
 
 
 
+        <form action="{% url 'jumpstart:thankyou'%}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="manual_address" value="" id="add_manual_address">
+                <input type='hidden' name="long" value="fuel" id="lat">
+                <p class="small" id="phone_output"></p>
+                <label for="phone">
+
+                    <input type="text" required name="phone" placeholder="Enter your phone number" id="phone"
+                           style="padding: 3px; border: 1px solid #571746; border-radius: 5px; margin-bottom: 3px"></label>
+                <button type="submit" class="silva bottom_margin btn btn-danger btn-lg btn-block"
+                        id="request">CLICK HERE FOR JUMP START</button>
+
+
+            </form>
+
+
+
+
 
             <img src="/media/media/jumpstart_clock.png" alt="roadside assistance" style="width: 150px; display: block; margin-top: 10px">
         <div align="center" style="border: 2px solid white; margin-top: 5px; padding: 5px; width: 335px; background-color: #29abe2; border-radius: 7px">

@@ -26,7 +26,7 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = os.environ['MY_KEY_JUMP']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['silvanojumpstart.pythonanywhere.com', 'www.jumpstartcarservice.com', '127.0.0.1']
 
@@ -132,3 +132,12 @@ LOGIN_REDIRECT_URL = '/'
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
+
+SEND_GRID_API_KEY = os.environ.get('SENDGRID_API_KEY')
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'silvano905'
+EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_PASSWORD')
+EMAIL_POST = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'from jump'
