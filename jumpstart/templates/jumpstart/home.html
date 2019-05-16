@@ -64,28 +64,30 @@
 </nav>
 
 
-<div align="center"><h1>Jump start only $39</h1></div>
+<div align="center"><h1>Car Jump Start</h1></div>
     <div class="bottom_margin container" align="center">
                             <div style="position: relative; text-align: center; color: white">
 
 
-                            <img style="width: 100%"
-                             src="/media/media/jumpstart_cables.jpg"
-                             alt="car jump start service and roadside assistance" title="car jump start service">
+                     <iframe class="makevideobig" id="vp1Dp0J6" title="Video Player" width="432" height="243" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1557969017&f=Dp0J6UiphV1ybosjB08wVw&d=0&m=a&r=360p+480p+720p&volume=100&start_res=480p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>
                         </div>
+
+                        <h5 class="card-text" style="background-color: #ff9c43; color: black; padding: 8px">Battery dead or too weak to start car? Jump start it now to start your car for $39</h5>
+
 
 
         <div class="card text-white bg-dark mb-3 purple_shadow">
 
                 <div style="color: white; background-color: black; border-radius: 4px; margin: 0 1px 4px 1px">
-                    <p>For better service please use the form below. You can also call us by clicking the blue button</p>
             <p>Only pay if the service was completed</p>
-            <p style="color: lime">Enter location/phone for free estimate</p>
+            <p style="color: #009a00">Enter location/phone for free estimate</p>
+            <p style="color: #009a00; margin-top: -14px;">Click green button when done</p>
+
 
         <form action="{% url 'jumpstart:thankyou'%}" method="post">
                 {% csrf_token %}
                 <input type="text" name="manual_address" value="" id="add_manual_address"
-                       placeholder="Enter your phone location" style="padding: 3px; border: 1px solid #571746; border-radius: 5px; margin-bottom: 3px">
+                       placeholder="Enter your Location" style="padding: 3px; border: 1px solid #571746; border-radius: 5px; margin-bottom: 3px">
                 <input type='hidden' name="long" value="fuel" id="lat">
                 <p class="small" id="phone_output"></p>
                 <label for="phone">
@@ -101,12 +103,7 @@
 
         </div>
 
-            <div align="center">
 
-            <a href="tel:+17085489664"><button class="btn btn-info btn-lg">CALL US</button></a>
-                <p>708-548-9664</p>
-
-    </div>
 
 
 
@@ -118,28 +115,86 @@
         </div>
     </div>
 
+
+
+
         <div align="center">
-            <div style="border: 1px solid black; width: 335px; height: 240px; background-color: #bce2b7; border-radius: 7px">
-                <p style="border: black 1px solid; background-color: black; color: white; width: 300px; border-radius: 7px; margin-top: 5px">Our price</p>
-                <img src="/media/media/jumpstart_ourprice.png" alt="free jump start" style="width: 180px;">
-                <img src="/media/media/jumpstart_blue_our.png" alt="free jump start chicago" style="width: 240px">
+
+
+            <div class="container" align="center" style="margin: 10px; border: 1px solid black; padding: 10px">
+
+<h4>Payments</h4>
+
+                        <div>
+                <img src="/media/media/here903Asset_30.png" alt="free jump start chicago" style="width: 240px">
             </div>
 
             <button id="dis-compe" class="btn btn-danger" style="margin-top: 8px">Check competition prices</button>
             <div style="visibility: hidden; display: none" id="show-compe">
-            <div style="border: black solid 1px; width: 335px; height: 350px; background-color: #cda4a4; border-radius: 7px; margin-top: 5px">
+            <div style="border: black solid 1px; width: 335px; height: 365px; background-color: #cda4a4; border-radius: 7px; margin-top: 5px">
                 <p style="border: black 1px solid; background-color: black; color: white; width: 300px; border-radius: 7px; margin-top: 5px">Our Competition prices</p>
-                <img src="/media/media/jumpstart_urg.png" alt="jump start service" style="width: 180px; margin-top: 10px">
+                <img src="/media/media/here901Asset_27.png" alt="jump start service" style="width: 180px; margin-top: 10px">
                 <img src="/media/media/jumpstart_price.png" alt="free jump start" style="width: 150px">
                 <a style="display: block" href="https://www.geturgently.com">Don't believe us? Check price</a>
 
-                <img src="/media/media/jumpstart_hon.png" alt="free jump start" style="width: 180px; margin-top: 20px">
+                <img src="/media/media/here901Asset_26.png" alt="free jump start" style="width: 180px; margin-top: 20px">
                 <img src="/media/media/jumpstart_price.png" alt="car jump start service" style="width: 150px">
                 <a style="display: block" href="https://mw.honkforhelp.com">Don't believe us? Check price</a>
             </div>
             </div>
-
+            </div>
         </div>
+
+
+
+<div align="center">
+    <div class="container">
+
+
+        <div align="center" style="margin-top: 5px; padding-top: 5px">
+<h4>Learn</h4>
+</div>
+
+                       <div style="background-color: black; margin: 15px 8px 8px 8px; padding: 8px">
+             <div align="center" style="color: white; margin: 8px; background-color: #a80400">
+                <p>Car won't start or dead battery? You need a battery jump start</p>
+            </div>
+            <div style="color: white; margin: 8px" align="left">
+                <div style="background-color: white">
+                    <p style="color: black; margin: 5px; padding: 5px">How to tell if you need a battery jump start service</p>
+                </div>
+                <p>1) Your engine cranks (makes a clicking noise), but it doesn't start.</p>
+                <p>2) Your engine doesn't crank (no clicking noise) or start, and the lights don't come on.</p>
+                <p>3) One day it starts fine, then the next day it won't start at all.</p>
+                <p>4) You left the lights on over night.</p>
+                <p>5) It has been 2 or more weeks since you last drove your car.</p>
+                <p>6) Excessive heat or cold weather can weaken your battery. Hot temperatures can be worse
+                    for your car than cold weather.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div align="center" style="margin-top: 5px; padding-top: 5px">
+<h4>Locations</h4>
+
+</div>
+
+<div class="container" align="center">
+                    <img src="/media/media/Asset_18.png" alt="roadside assistance" style="width: 400px; height: auto">
+
+</div>
+
+
+    <div align="center">
+                    <div class="container" align="center" style="margin: 10px; border: 1px solid black; padding: 10px">
+    <p>Contact</p>
+            <a href="tel:+17085489664"><button class="btn btn-info btn-lg">CALL</button></a>
+                <p>708-548-9664</p>
+                    </div>
+
+    </div>
+
 
 <div class="container">
     <div align="left" style="border: 1px solid blue; margin: 5px; padding: 5px">
@@ -153,15 +208,13 @@
         and more. You may be able to tell when your car battery starts to die if you find it
         difficult to start your car, have flickering lights, or a weakening alarm system.</p>
 
-<div align="center">
-<img src="/media/media/jumpstart_map.png" alt="roadside assistance" style="width: 340px; display: block; margin-top: 10px; margin-bottom: 5px">
-</div>
 
 
-    <p><a href="https://www.chicagocarhelp.com/">Chicagocarhelp</a> was created because of the high prices for a jump start in chicago and suburbs. We feel that it shouldn't cost $75
-    or $100 dollars for a jump start service in chicago. That won't be a problem anymore because chicagocarhelp only charges
-    $39 dollars for a jump start and only if the serivice was completed. The cheapest and fastest option available in chicago and suburbs. You only pay if the serivice was completed
-    successfully and the car was able to start. Next time your car doson't start and need a jump start service near you go to <a href="https://www.chicagocarhelp.com/">www.chicagocarhelp.com</a> Its fast and cheap</p>
+
+    <p>Jumpstartcarservice was created because of the high prices for a jump start in chicago and suburbs. We feel that it shouldn't cost $75
+    or $100 dollars for a jump start service in chicago. That won't be a problem anymore because Jumpstartcarservice only charges
+    $39 dollars for a jump start and only if the service was completed. The cheapest and fastest option available in chicago and suburbs. You only pay if the serivice was completed
+    successfully and the car was able to start. Next time your car doesn't start and need a jump start service near you go to <a href="https://www.chicagocarhelp.com/">www.chicagocarhelp.com</a> (If you are in chicago) Its fast and cheap</p>
 </div>
     </div>
     <div class="container" >
