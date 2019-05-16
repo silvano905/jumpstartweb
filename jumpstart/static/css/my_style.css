@@ -151,8 +151,15 @@ img{
 @media screen and (min-width: 700px){
 
     .makevideobig{
-        width:500px;
+        width:450px;
         height:300px;
+    }
+    .makebig{
+        width: 600px;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 5px
     }
 
 
