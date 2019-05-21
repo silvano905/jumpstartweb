@@ -67,22 +67,56 @@
 
     <div class="card text-white bg-dark mb-3 purple_shadow">
             <div class="card-body">
-                <h1 style="font-size: 32px">Jump start service</h1>
+                                <h1 style="font-size: 32px">Jump Start Car</h1>
 
 
-                        <div style="position: relative; text-align: center; color: white">
+                                            <div style="position: relative; text-align: center; color: white">
 
 
-
-
-                     <iframe class="makevideobig" id="vp1Dp0J6" title="Video Player" width="300" height="200" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1557969017&f=Dp0J6UiphV1ybosjB08wVw&d=0&m=a&r=360p+480p+720p&volume=100&start_res=480p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>
-
-
+                            <img style="width: 100%"
+                             src="/media/media/jumpstart_cables.jpg"
+                             alt="car jump start service and roadside assistance" title="car jump start service">
                         </div>
 
 
-                <h5 class="card-text" style="background-color: #ff9c43; color: black">Battery dead or too weak to start car? Jump start it now to start your car for $39</h5>
+                <h5 class="card-text">Fast & Cheap car jump start in the suburbs for $39</h5>
 
+                <p style="background-color: orange; color: black"><strong>Reasons why people in Chicago request a jump start from us.</strong></p>
+
+
+            <div class="card-deck">
+
+              <div class="card text-white bg-info mb-3">
+                <div class="card-body">
+                <p>1. Car won't start</p>
+
+                </div>
+              </div>
+
+              <div class="card text-white bg-info mb-3">
+                    <div class="card-body">
+                <p>2. Dead car battery</p>
+                    </div>
+              </div>
+
+
+            </div>
+        <div class="card-deck">
+
+              <div class="card text-white bg-info mb-3">
+                <div class="card-body">
+                <p>3. Weak car battery</p>
+
+                </div>
+              </div>
+
+              <div class="card text-white bg-info mb-3">
+                <div class="card-body">
+                <p style="font-size: 17px">4. Fast service in 8-20 minutes</p>
+
+                </div>
+              </div>
+            </div>
 
 
 
@@ -90,25 +124,31 @@
             </div>
 
 
-
-             <div style="color: white; background-color: black; border-radius: 4px; margin: 0 1px 4px 1px">
-            <p>Only pay if the service was completed</p>
+        <div style="color: white; background-color: black; border-radius: 4px; margin: 0 1px 4px 1px">
+            <p>Only pay if jump start was successful, you have nothing to lose</p>
             <p style="color: #009a00">Enter location/phone for free estimate</p>
-            <p style="color: #009a00; margin-top: -14px;">Click green button when done</p>
+
+        </div>
 
 
         <form action="{% url 'jumpstart:thankyou'%}" method="post">
                 {% csrf_token %}
-                <input type="text" name="manual_address" value="" id="add_manual_address"
+                <input class="form-control" type="text" name="manual_address" value="" id="add_manual_address"
                        placeholder="Enter your Location" style="padding: 3px; border: 1px solid #571746; border-radius: 5px; margin-bottom: 3px">
                 <input type='hidden' name="long" value="fuel" id="lat">
                 <p class="small" id="phone_output"></p>
                 <label for="phone">
 
+
+                    <img class="card-img-top"
+                         src="/media/media/call-answer.png"
+                         alt="tire" style="width: 20px; height: 20px; margin-top: -10px">
                     <input type="text" required name="phone" placeholder="Enter your phone number" id="phone"
                            style="padding: 3px; border: 1px solid #571746; border-radius: 5px; margin-bottom: 3px"></label>
-                <button type="submit" class="silva bottom_margin btn btn-danger btn-lg btn-block"
-                        id="request">CLICK HERE FOR JUMP START</button>
+                <button type="submit" class="bottom_margin btn btn-success btn-lg btn-block"
+                        id="request">CLICK HERE WHEN INFO ENTERED</button>
+                    <h5 style="color: #ffffff">Credit card, cash or Venmo accepted</h5>
+
 
 
             </form>
@@ -117,48 +157,75 @@
 
 
 
-    </div>
 
 
 
 
+                    <img src="/media/media/jumpstart_clock.png" alt="roadside assistance" style="width: 150px; display: block; margin-top: 10px">
+        <div align="center" style="border: 2px solid white; margin-top: 5px; padding: 5px; width: 335px; background-color: #29abe2; border-radius: 7px">
+            <h5 style="color: white">FAST</h5>
+        <h5 style="color: white">Will get to you in 8-20 minutes</h5>
+        </div>
 
 
 
 
-            <div align="center" style="margin: 10px; border: 1px solid black; padding: 10px">
+        <div class="card" style="width: 18rem; margin: 10px">
+            <h5 class="card-title">Payments</h5>
 
-<h4>Payments</h4>
-
-                        <div>
                 <img src="/media/media/here903Asset_30.png" alt="free jump start chicago" style="width: 240px">
+          <div class="card-body">
+
+
+
+          </div>
+        </div>
+
+            <button id="dis-compe" class="btn btn-light" style="margin-top: -8px; margin-bottom: 8px">Check competition prices</button>
+                <div style="visibility: hidden; display: none" id="show-compe">
+                    <div style="border: black solid 1px; width: 320px; height: 395px; background-color: #ffffff; border-radius: 7px; margin-top: 5px">
+                        <p style="border: black 1px solid; background-color: black; color: white; width: 250px; border-radius: 7px; margin-top: 5px">Competition prices</p>
+                        <img src="/media/media/here901Asset_27.png" alt="jump start service" style="width: 180px; margin-top: 10px">
+                        <img src="/media/media/jumpstart_price.png" alt="free jump start" style="width: 150px">
+                        <a style="display: block" href="https://www.geturgently.com">Check price</a>
+
+                        <img src="/media/media/here901Asset_26.png" alt="free jump start" style="width: 180px; margin-top: 20px">
+                        <img src="/media/media/jumpstart_price.png" alt="car jump start service" style="width: 150px">
+                        <a style="display: block" href="https://mw.honkforhelp.com">Check price</a>
+                    </div>
+                </div>
+
+
+        <div align="center" style="margin-top: 7px; margin-bottom: 15px">
+           <iframe class="makevideobig" id="vp1Dp0J6" title="Video Player" width="100%" height="200" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1558305867&f=u2SohXLv7Sr78FJZ91Rw0g&d=0&m=a&r=360p&volume=100&start_res=undefined&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>
+
+            <div class="card text-dark bg-light mb-3 green_shadow">
+              <div class="card-body">
+                <p class="card-text make_big" style="margin-top: -10px; font-size: 18px" >How our jump start works</p>
+
+              </div>
             </div>
 
-            <button id="dis-compe" class="btn btn-danger" style="margin-top: 8px">Check competition prices</button>
-            <div style="visibility: hidden; display: none" id="show-compe">
-            <div style="border: black solid 1px; width: 320px; height: 395px; background-color: #cda4a4; border-radius: 7px; margin-top: 5px">
-                <p style="border: black 1px solid; background-color: black; color: white; width: 250px; border-radius: 7px; margin-top: 5px">Competition prices</p>
-                <img src="/media/media/here901Asset_27.png" alt="jump start service" style="width: 180px; margin-top: 10px">
-                <img src="/media/media/jumpstart_price.png" alt="free jump start" style="width: 150px">
-                <a style="display: block" href="https://www.geturgently.com">Check price</a>
 
-                <img src="/media/media/here901Asset_26.png" alt="free jump start" style="width: 180px; margin-top: 20px">
-                <img src="/media/media/jumpstart_price.png" alt="car jump start service" style="width: 150px">
-                <a style="display: block" href="https://mw.honkforhelp.com">Check price</a>
+        </div>
+
+        <hr>
+
+        <div align="center" style="margin: 10px">
+           <iframe class="makevideobig" id="vp1Dp0J6" title="Video Player" width="100%" height="200" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1558316047&f=PSNIgNPFD42VGRbGgj9sSQ&d=0&m=a&r=360p&volume=100&start_res=undefined&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>
+
+            <div class="card text-dark bg-light mb-3 green_shadow">
+              <div class="card-body" align="center">
+                <p class="card-text make_big" style="margin-top: -10px; font-size: 18px">How to tell if you need a jump start</p>
+
+              </div>
             </div>
-            </div>
-            </div>
 
 
+        </div>
 
-<div align="center">
 
-
-        <div align="center" style="margin-top: 5px; padding-top: 5px">
-<h4>Learn</h4>
-</div>
-
-                       <div style="background-color: black; margin: 15px 8px 8px 8px; padding: 8px">
+        <div style="background-color: black; margin: 15px 8px 8px 8px; padding: 8px">
              <div align="center" style="color: white; margin: 8px; background-color: #a80400">
                 <p>Car won't start or dead battery? You need a battery jump start</p>
             </div>
@@ -175,22 +242,42 @@
                     for your car than cold weather.</p>
             </div>
         </div>
-</div>
-
-<div align="center" style="margin-top: 5px; padding-top: 5px">
-<h4>Locations</h4>
-
-</div>
-
-        <img src="/media/media/Asset_18.png" alt="roadside assistance" class="makebig">
 
 
 
-                    <div align="center" style="margin: 10px; border: 1px solid black; padding: 10px">
-    <p>Contact</p>
-            <a href="tel:+17085489664"><button class="btn btn-info btn-lg">CALL</button></a>
-                <p>708-548-9664</p>
+        <div class="card-deck">
+              <div class="card text-white bg-secondary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact</h5>
+                        <p>For better/faster service please use the form above. You can also call us</p>
+                        <a href="tel:+17085489664"><button class="btn btn-info btn-lg">CALL</button></a>
+                        <p>708-548-9664</p>
                     </div>
+              </div>
+
+
+              <div class="card text-white bg-warning mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Best Choice</h5>
+                    <img src="/media/media/jumpstart_seal.png" alt="roadside assistance" style="width: 100px">
+
+                </div>
+              </div>
+
+
+              <div class="card text-white bg-warning mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Five Start Rating</h5>
+                    <img src="/media/media/jumpstart_five.png" alt="free car jump start" style="width: 150px">
+
+                </div>
+              </div>
+
+
+        </div>
+
+
+
 
 
 
@@ -266,7 +353,7 @@
     <a href="http://jumpstarterexpert.com/how-to-use-a-portable-jump-starter/">How to use a jump starter</a>
 </div>
 </div>
-</div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"
