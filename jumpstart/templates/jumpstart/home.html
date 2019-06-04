@@ -62,6 +62,11 @@
 
 
 </nav>
+
+
+{% block body_block %}
+
+
 <div class="top_margin container" align="center">
 
 
@@ -135,7 +140,7 @@
                 {% csrf_token %}
                 <input class="form-control" type="text" name="manual_address" value="" id="add_manual_address"
                        placeholder="Enter your Location" style="padding: 3px; border: 1px solid #571746; border-radius: 5px; margin-bottom: 3px">
-                <input type='hidden' name="long" value="fuel" id="lat">
+                <input type='hidden' name="lengua" value="USA" id="lat">
                 <p class="small" id="phone_output"></p>
                 <label for="phone">
 
@@ -161,7 +166,7 @@
 
 
 
-                    <img src="/media/media/jumpstart_clock.png" alt="roadside assistance" style="width: 150px; display: block; margin-top: 10px">
+                    <img src="/media/media/here901Asset_25.png" alt="roadside assistance" style="width: 150px; display: block; margin-top: 10px">
         <div align="center" style="border: 2px solid white; margin-top: 5px; padding: 5px; width: 335px; background-color: #29abe2; border-radius: 7px">
             <h5 style="color: white">FAST</h5>
         <h5 style="color: white">Will get to you in 8-20 minutes</h5>
@@ -357,6 +362,9 @@
 </div>
     </div>
 
+
+
+{% endblock %}
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">

@@ -11,6 +11,10 @@ def dead_battery(request):
     return render(request, 'jumpstart/dead-car-battery.html')
 
 
+def spanish_jump_start(request):
+    return render(request, 'jumpstart/spanish_jump.html')
+
+
 def car_not_starting(request):
     return render(request, 'jumpstart/car-not-starting.html')
 
@@ -23,11 +27,11 @@ def site_map(request):
 def request_services(request):
     get_manual_address = request.POST.get('manual_address')
     phone_number = request.POST.get('phone')
-    grand_total = request.POST.get('grand_total')
+    lengua = request.POST.get('lengua')
 
     direccion = get_manual_address
     phone_number = ' Phone Number: {}'.format(str(phone_number))
-    msg = direccion + phone_number
+    msg = direccion + phone_number + " : {}".format(lengua)
 
     email_user = 'silvanovaldez90@yahoo.com'
 
