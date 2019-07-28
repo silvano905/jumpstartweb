@@ -8,7 +8,7 @@ def home_view(request):
 
 
 def dead_battery(request):
-    return render(request, 'jumpstart/dead-car-battery.html')
+    return render(request, 'jumpstart/car-jump-start-service-chicago.html')
 
 
 def spanish_jump_start(request):
