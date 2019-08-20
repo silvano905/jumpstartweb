@@ -1,30 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-{% load staticfiles %}
-{% load bootstrap4 %}
-<head>
-    <title>Jump Start Car Battery Service Chicago $39 - Free Estimate</title>
-    <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport" >
-    <meta name="description" content="Jump Start Car Service in Chicago for $39 Fast and Cheap.">
+{% extends 'jumpstart/home.html' %}
 
-    <meta name="keywords" content="Jump Start Car Service, Car Dead Battery Jump, Jump Start Chicago">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/my_style.css' %}"/>
-</head>
-<body>
+{% block body_block %}
 
 
 
 
 
-<div align="center"><h1>$39 Jump Start Car Battery</h1></div>
+<div align="center"><h1>Jump Start Service</h1></div>
     <div class="bottom_margin container" align="center">
-                                <div style="position: relative; text-align: center; color: white">
+                                < style="position: relative; text-align: center; color: white">
                                 <div style="margin-top: 5px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
 
-                                    <h4 style="background-color: black">Dead Car Battery? You need a Jump Start Service</h4>
+                                    <h4 style="background-color: black">Dead Car Battery? You need a Jump Start Car Service</h4>
                                     <h4 style="background-color: black">Free Estimate</h4>
 
                                 </div>
@@ -33,7 +21,8 @@
                                  src="https://chicagocarhelp.s3.us-east-2.amazonaws.com/jumpstart_cables.jpg"
                                  alt="jump start car service" title="jump start car service">
                                  <a href="{% url 'jumpstart:home'%}">
-                                </div>
+                                 </a>
+    </div>
 
 
 
@@ -145,7 +134,7 @@
 </div>
 
 
-        <p>We created this jump start car service because of the high prices for a car jump start in chicago and the suburbs. We feel that it
+        <p>We created this jump start car service because of the high prices for a car jump start service in chicago and the suburbs. We feel that it
             shouldn't cost $100 or $120 dollars for a simple car jump start service in chicago. That won't be a
             problem anymore because we only charges $39 dollars for a jump start and nothing
             more. The cheapest option available in chicago and suburbs and we arrive in 8 to 20
@@ -172,7 +161,4 @@
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
 
-    </div>
-
-</body>
-</html>
+{% endblock %}
