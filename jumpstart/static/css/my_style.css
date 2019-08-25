@@ -4,9 +4,7 @@ img{
     object-fit: contain;
 }
 
-#mxm{
-    color: #0a8516;
-}
+
     .make_me_small{
         font-size: 15px;
         color: #6DDCBD;
@@ -139,9 +137,7 @@ img{
 }
 
 @media screen and (max-width: 600px){
-    .make_me_small{
-        font-size: 9px;
-    }
+
     .main{
         font-size: 19px;
     }
@@ -182,9 +178,7 @@ img{
 }
 
 @media screen and (max-width: 600px){
-    .make_me_small{
-        font-size: 15px;
-    }
+
 
     .makebig{width: 340px; display: block; margin-top: 10px; margin-bottom: 5px}
 
@@ -215,3 +209,10 @@ img{
 
 
 }
+
+ @media only screen and (max-width: 640px) {
+   /* Add your custom styles here for Mobile */
+     #mxm{
+         font-size: 16px;
+     }
+ }
