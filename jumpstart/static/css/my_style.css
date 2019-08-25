@@ -4,6 +4,14 @@ img{
     object-fit: contain;
 }
 
+#mxm{
+    color: #0a8516;
+}
+    .make_me_small{
+        font-size: 15px;
+        color: #6DDCBD;
+    }
+
 .bl{
     background-color: #171717;
     border-radius: 3px;
