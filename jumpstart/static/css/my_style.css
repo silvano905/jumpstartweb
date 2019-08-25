@@ -131,6 +131,9 @@ img{
 }
 
 @media screen and (max-width: 600px){
+    .make_me_small{
+        font-size: 18px;
+    }
     .main{
         font-size: 19px;
     }
