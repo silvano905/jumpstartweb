@@ -26,7 +26,7 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = os.environ['MY_KEY_JUMP']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['silvanojumpstart.pythonanywhere.com', 'www.jumpstartcarservice.com', '127.0.0.1']
 
