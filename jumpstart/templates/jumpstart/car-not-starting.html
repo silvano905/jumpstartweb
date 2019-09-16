@@ -1,7 +1,66 @@
 <!DOCTYPE html>
-{% extends 'jumpstart/home.html' %}
+{% load staticfiles %}
+{% load bootstrap4 %}
+<html lang="en">
+<head>
 
-{% block body_block %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135035488-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135035488-1');
+</script>
+
+    <meta name="google-site-verification" content="Xh4b-vbI3iSpApnHIJfn1fABxBZ8kae5X5GhckCk3es" />
+
+    <title>$39 Car Lockout Service Chicago,IL Jumpstartcarservice. Free ETA & Fastest and cheapest in Chicago</title>
+
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport" >
+    <meta name="description" content="$39 for a car lockout service in Chicago, IL. Fast and cheap. No call needed. Will be there in 20 minutes or less.">
+
+    <meta name="keywords" content="Jump start car service, car won't start, dead car battery, Jump Start Service Chicago">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/my_style.css' %}"/>
+</head>
+<body class="main">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+
+    <a class="small_font navbar-brand" href="{% url 'jumpstart:home'%}">Jumpstartcarservice
+    </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbarXs">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="collapsingNavbarXs">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{% url 'jumpstart:dead-car-battery'%}">Chicago jump start service</a>
+
+                    </div>
+                </li>
+
+
+
+            </ul>
+        </div>
+
+
+
+</nav>
 
 
 
@@ -96,4 +155,5 @@
 
 
 
-{% endblock %}
+</body>
+</html>
