@@ -56,7 +56,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CACHE_MIDDLEWARE_SECONDS= 20000
+CACHE_MIDDLEWARE_ALIAS = "my_cache"
+CACHE_MIDDLEWARE_SECONDS = 20000
 
 
 CACHES = {
